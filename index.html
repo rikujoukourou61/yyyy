@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Yaya</title>
+<title>Home</title>
 <style type="text/css">
   body {
     padding: 0;
@@ -25,7 +25,17 @@
 </head>
 <body>
   <div class="img-container">
-    <img src="imgs/LkhmGFV0_4x.jpg">
+    <img src="imgs/LkhmGFV0_4x.jpg" id="img1">
   </div>
+  <button id="claim-btn" onclick="visible()">Claim</button>
 </body>
+<script>
+  let btn = document.getElementById('claim-btn');
+  let img = document.getElementById('img1');
+
+  function visible() {
+    if (img.style.visibility == '0') img.style.visibility = '100';
+    else img.style.visibility = 0;
+  }
+</script>
 </html>
