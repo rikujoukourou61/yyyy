@@ -20,7 +20,7 @@
     box-shadow: 0 5px 35px rgba(0,0,0,0.3);
     border-radius: 10px;
     width: 100%;
-visibility: 0;
+visibility: hidden;
   }
 </style>
 </head>
@@ -35,8 +35,8 @@ visibility: 0;
   let img = document.getElementById('img1');
 
   function visible() {
-    if (img.style.visibility == '0') img.style.visibility = '100';
-    else img.style.visibility = 0;
+    if (img.style.visibility == 'hidden') img.style.visibility = 'visible';
+    else img.style.visibility = 'hidden';
   }
 </script>
 </html>
